@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Event Dashboard</title>
+</head>
+
+<body>
+
+<h1>Smart Event Dashboard</h1>
+<h2>Add New Event</h2>
+
+<form id="eventForm">
+
+<label>
+Event Title:
+<input type="text" id="eventTitle" required>
+</label>
+
+<br><br>
+
+<label>
+Event Date:
+<input type="date" id="eventDate" required>
+</label>
+
+<br><br>
+
+<label>
+Category:
+<select id="eventCategory" required>
+<option value="Conference">Conference</option>
+<option value="Workshop">Workshop</option>
+<option value="Meetup">Meetup</option>
+<option value="Social">Social</option>
+</select>
+</label>
+
+<br><br>
+
+<label>
+Description:
+<textarea id="eventDescription" required></textarea>
+</label>
+
+<br><br>
+
+<button type="submit">Add Event</button>
+
+</form>
+
+<br>
+
+<button id="addSampleBtn">Add Sample Events</button>
+<button id="clearAllBtn">Clear All Events</button>
+
+<div id="eventContainer">
+<div class="empty-state">No events yet. Add your first event!</div>
+</div>
+
+<hr>
+
+<h2>DOM Manipulation Demo</h2>
+
+<div id="demoContent">
+Press any key to see the difference!
+</div>
+
+<script src="./script.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</body>
+</html> 
